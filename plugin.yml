@@ -6,8 +6,6 @@ author: devpapo
 description: Sistema de protección de áreas usando bloques especiales
 depend: 
   - FormAPI
-softdepend:
-  - WorldGuard
 
 commands:
   pstone:
