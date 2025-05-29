@@ -1,0 +1,25 @@
+name: ProtectionStones
+version: 1.0.0
+main: devpapo\ProtectionStones\Main
+api: 5.0.0
+author: devpapo
+description: Sistema de protección de áreas usando bloques especiales
+depend: 
+  - WorldGuard
+  - FormAPI
+commands:
+  pstone:
+    description: Comando principal de ProtectionStones
+    usage: "/pstone"
+    permission: pstone.use
+  psadmin:
+    description: Comandos de administración de ProtectionStones
+    usage: "/psadmin"
+    permission: pstone.admin
+permissions:
+  pstone.use:
+    description: Permiso para usar ProtectionStones
+    default: true
+  pstone.admin:
+    description: Permiso de administrador de ProtectionStones
+    default: op

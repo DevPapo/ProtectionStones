@@ -1,0 +1,31 @@
+# Configuración de bloques de protección
+protection_blocks:
+  end_portal:
+    block_id: "minecraft:end_portal_frame"
+    protection_size: 16
+    price: 1000
+    item: "minecraft:end_portal_frame"
+    display_name: "§5End Portal Protection"
+  end_stone:
+    block_id: "minecraft:end_stone"
+    protection_size: 32
+    price: 2500
+    item: "minecraft:end_stone"
+    display_name: "§fEnd Stone Protection"
+
+# Configuración de mensajes
+messages:
+  no_permission: "§cNo tienes permiso para hacer esto!"
+  region_created: "§aRegión protegida creada correctamente!"
+  region_removed: "§aRegión eliminada correctamente!"
+  not_region_owner: "§cNo eres el dueño de esta región!"
+  block_not_protection: "§cEste bloque no es una protección!"
+  region_already_exists: "§cYa existe una región en esta ubicación!"
+  member_added: "§aJugador %player añadido a la región!"
+  member_removed: "§aJugador %player eliminado de la región!"
+  flag_updated: "§aConfiguración de bandera actualizada!"
+
+# Configuración de la base de datos
+database:
+  type: sqlite
+  file: protection_stones.db
