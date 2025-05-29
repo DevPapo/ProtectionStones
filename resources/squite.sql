@@ -41,11 +41,18 @@ CREATE INDEX IF NOT EXISTS idx_member_player ON ps_members(player);
 CREATE INDEX IF NOT EXISTS idx_flag_region ON ps_flags(region_id);
 
 -- Consultas para ProtectionStones
+
 -- Añadir protection stone
 CREATE PROCEDURE add_ps(owner TEXT, region_id TEXT, world TEXT, x INTEGER, y INTEGER, z INTEGER, block_id INTEGER)
 BEGIN
     INSERT INTO protection_stones(owner, region_id, world, x, y, z, block_id) 
     VALUES(owner, region_id, world, x, y, z, block_id);
+END;
+
+-- Obtener todas las protecciones
+CREATE PROCEDURE get_all_protections()
+BEGIN
+    SELECT * FROM protection_stones;
 END;
 
 -- Obtener protection stone por bloque

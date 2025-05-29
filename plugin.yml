@@ -5,8 +5,10 @@ api: 5.0.0
 author: devpapo
 description: Sistema de protección de áreas usando bloques especiales
 depend: 
-  - WorldGuard
   - FormAPI
+softdepend:
+  - WorldGuard
+
 commands:
   pstone:
     description: Comando principal de ProtectionStones
@@ -22,4 +24,4 @@ permissions:
     default: true
   pstone.admin:
     description: Permiso de administrador de ProtectionStones
-    default: op
+    default: op 
